@@ -1,0 +1,134 @@
+/* Drag and Drop Styles */
+
+.album-card-draggable {
+  cursor: move;
+  cursor: grab;
+  position: relative;
+}
+
+.album-card-draggable:active {
+  cursor: grabbing;
+}
+
+/* Drag handle */
+.album-card-drag-handle {
+  position: absolute;
+  top: var(--spacing-sm);
+  left: var(--spacing-sm);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  cursor: grab;
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  z-index: 10;
+}
+
+.album-card-draggable:hover .album-card-drag-handle {
+  opacity: 1;
+}
+
+.album-card-drag-handle:hover {
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--color-text-primary);
+}
+
+.album-card-drag-handle:active {
+  cursor: grabbing;
+}
+
+/* Dragging state */
+.album-card-dragging {
+  opacity: 0.5;
+  transform: scale(0.95);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+/* Drop target highlighting */
+.album-card-drop-target {
+  border: 2px dashed var(--color-primary);
+  background: rgba(33, 150, 243, 0.05);
+  transform: scale(1.02);
+}
+
+.album-card-drop-target::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius-lg);
+  pointer-events: none;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Touch device adjustments */
+@media (hover: none) and (pointer: coarse) {
+  .album-card-drag-handle {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.15);
+  }
+
+  .album-card-draggable {
+    cursor: default;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .album-card-dragging,
+  .album-card-drop-target {
+    transition: none;
+    animation: none;
+  }
+
+  .album-card-drop-target::before {
+    animation: none;
+  }
+}
+
+/* Focus states for keyboard reordering */
+.album-card-draggable:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Keyboard reorder hint */
+.album-card-draggable[aria-describedby="reorder-hint"]::after {
+  content: attr(data-reorder-hint);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-text-primary);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-xs);
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+  z-index: 100;
+}
+
+.album-card-draggable:focus-visible::after {
+  opacity: 1;
+}
