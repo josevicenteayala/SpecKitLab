@@ -1,0 +1,31 @@
+# Pharo image and changes
+*.image
+*.changes
+
+# Pharo system files
+pharo-local/
+pharo-vm/
+*.sources
+
+# Cache and temporary files
+cache/
+*.log
+*.fuel
+
+# OS specific
+.DS_Store
+Thumbs.db
+*~
+
+# IDE specific
+.idea/
+*.swp
+*.swo
+
+# Metacello and package cache
+package-cache/
+github-cache/
+
+# Build artifacts
+*.zip
+*.tar.gz
