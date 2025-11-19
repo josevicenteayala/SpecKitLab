@@ -27,13 +27,13 @@ Single-page web application structure:
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Initialize Vite project with vanilla JavaScript template
-- [ ] T002 [P] Create project directory structure: src/, src/js/, src/css/, src/db/, public/
-- [ ] T003 [P] Configure package.json with sql.js dependency
-- [ ] T004 [P] Setup ESLint configuration file .eslintrc.json for vanilla JavaScript
-- [ ] T005 [P] Setup Prettier configuration file .prettierrc
-- [ ] T006 [P] Create CSS custom properties file src/css/variables.css for design tokens
-- [ ] T007 [P] Create base HTML structure in index.html with viewport meta and semantic markup
+- [X] T001 Initialize Vite project with vanilla JavaScript template
+- [X] T002 [P] Create project directory structure: src/, src/js/, src/css/, src/db/, public/
+- [X] T003 [P] Configure package.json with sql.js dependency
+- [X] T004 [P] Setup ESLint configuration file .eslintrc.json for vanilla JavaScript
+- [X] T005 [P] Setup Prettier configuration file .prettierrc
+- [X] T006 [P] Create CSS custom properties file src/css/variables.css for design tokens
+- [X] T007 [P] Create base HTML structure in index.html with viewport meta and semantic markup
 
 ---
 
@@ -43,20 +43,20 @@ Single-page web application structure:
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T008 Initialize SQLite database with sql.js in src/db/database.js
-- [ ] T009 Create database schema for albums table in src/db/schema.sql
-- [ ] T010 Create database schema for photos table in src/db/schema.sql
-- [ ] T011 Create database schema for album_order table in src/db/schema.sql
-- [ ] T012 Implement database initialization function in src/db/database.js
-- [ ] T013 [P] Setup IndexedDB wrapper for photo file storage in src/js/storage.js
-- [ ] T014 [P] Create utility for file hash calculation (duplicate detection) in src/js/utils/hash.js
-- [ ] T015 [P] Create thumbnail generator utility in src/js/utils/thumbnail.js
-- [ ] T016 [P] Implement error boundary and global error handler in src/js/utils/errorHandler.js
-- [ ] T017 [P] Create notification/toast UI component in src/js/components/notification.js
-- [ ] T018 [P] Setup CSS grid system and responsive breakpoints in src/css/layout.css
-- [ ] T019 [P] Create base styles for accessibility (focus indicators, ARIA support) in src/css/accessibility.css
-- [ ] T019a [P] Create reusable confirmation dialog component in src/js/components/confirmDialog.js
-- [ ] T019b [P] Style confirmation dialog in src/css/components/dialog.css
+- [X] T008 Initialize SQLite database with sql.js in src/db/database.js
+- [X] T009 Create database schema for albums table in src/db/schema.sql
+- [X] T010 Create database schema for photos table in src/db/schema.sql
+- [X] T011 Create database schema for album_order table in src/db/schema.sql
+- [X] T012 Implement database initialization function in src/db/database.js
+- [X] T013 [P] Setup IndexedDB wrapper for photo file storage in src/js/storage.js
+- [X] T014 [P] Create utility for file hash calculation (duplicate detection) in src/js/utils/hash.js
+- [X] T015 [P] Create thumbnail generator utility in src/js/utils/thumbnail.js
+- [X] T016 [P] Implement error boundary and global error handler in src/js/utils/errorHandler.js
+- [X] T017 [P] Create notification/toast UI component in src/js/components/notification.js
+- [X] T018 [P] Setup CSS grid system and responsive breakpoints in src/css/layout.css
+- [X] T019 [P] Create base styles for accessibility (focus indicators, ARIA support) in src/css/accessibility.css
+- [X] T019a [P] Create reusable confirmation dialog component in src/js/components/confirmDialog.js
+- [X] T019b [P] Style confirmation dialog in src/css/components/dialog.css
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -70,23 +70,23 @@ Single-page web application structure:
 
 ### Implementation for User Story 1
 
-- [ ] T020 [P] [US1] Create Album model class in src/js/models/Album.js with CRUD methods
-- [ ] T021 [P] [US1] Create Photo model class in src/js/models/Photo.js with CRUD methods
-- [ ] T022 [US1] Implement AlbumService in src/js/services/albumService.js (getAll, create, getById methods)
-- [ ] T023 [US1] Implement PhotoService in src/js/services/photoService.js (getByAlbumId, add methods)
-- [ ] T024 [P] [US1] Create main page UI structure in src/js/views/mainView.js
-- [ ] T025 [P] [US1] Create album list component in src/js/components/albumList.js
-- [ ] T026 [P] [US1] Create album card component in src/js/components/albumCard.js
-- [ ] T027 [P] [US1] Create album view UI in src/js/views/albumView.js
-- [ ] T028 [P] [US1] Create photo tile grid component in src/js/components/photoGrid.js
-- [ ] T029 [P] [US1] Create individual photo tile component in src/js/components/photoTile.js
-- [ ] T030 [US1] Implement album sorting by date (chronological) in src/js/services/albumService.js
-- [ ] T031 [US1] Wire up main page to display albums from database in index.html
-- [ ] T032 [US1] Wire up album navigation (click album to view photos) in src/js/controllers/navigation.js
-- [ ] T033 [P] [US1] Style album cards for main page in src/css/components/album-card.css
-- [ ] T034 [P] [US1] Style photo tile grid with responsive layout (1 col mobile, 2 col tablet, 4 col desktop) in src/css/components/photo-grid.css
-- [ ] T035 [US1] Implement photo tile uniform sizing with cropping in src/css/components/photo-tile.css
-- [ ] T036 [US1] Add loading states for album and photo views in src/js/components/loader.js
+- [X] T020 [P] [US1] Create Album model class in src/js/models/Album.js with CRUD methods
+- [X] T021 [P] [US1] Create Photo model class in src/js/models/Photo.js with CRUD methods
+- [X] T022 [US1] Implement AlbumService in src/js/services/albumService.js (getAll, create, getById methods)
+- [X] T023 [US1] Implement PhotoService in src/js/services/photoService.js (getByAlbumId, add methods)
+- [X] T024 [P] [US1] Create main page UI structure in src/js/views/mainView.js
+- [X] T025 [P] [US1] Create album list component in src/js/components/albumList.js
+- [X] T026 [P] [US1] Create album card component in src/js/components/albumCard.js
+- [X] T027 [P] [US1] Create album view UI in src/js/views/albumView.js
+- [X] T028 [P] [US1] Create photo tile grid component in src/js/components/photoGrid.js
+- [X] T029 [P] [US1] Create individual photo tile component in src/js/components/photoTile.js
+- [X] T030 [US1] Implement album sorting by date (chronological) in src/js/services/albumService.js
+- [X] T031 [US1] Wire up main page to display albums from database in index.html
+- [X] T032 [US1] Wire up album navigation (click album to view photos) in src/js/controllers/navigation.js
+- [X] T033 [P] [US1] Style album cards for main page in src/css/components/album-card.css
+- [X] T034 [P] [US1] Style photo tile grid with responsive layout (1 col mobile, 2 col tablet, 4 col desktop) in src/css/components/photo-grid.css
+- [X] T035 [US1] Implement photo tile uniform sizing with cropping in src/css/components/photo-tile.css
+- [X] T036 [US1] Add loading states for album and photo views in src/js/components/loader.js
 
 **Checkpoint**: At this point, User Story 1 should be fully functional - users can create albums, view them sorted by date, and see photos in a tile grid
 
@@ -100,24 +100,24 @@ Single-page web application structure:
 
 ### Implementation for User Story 2
 
-- [ ] T037 [P] [US2] Create file upload UI component in src/js/components/fileUpload.js
-- [ ] T038 [P] [US2] Implement multi-file selection handler in src/js/components/fileUpload.js
-- [ ] T039 [US2] Add file format validation (JPEG, PNG, HEIC, WebP) with HEIC browser compatibility check in src/js/utils/fileValidator.js
-- [ ] T040 [US2] Implement file hash calculation for duplicate detection in src/js/services/photoService.js
-- [ ] T041 [US2] Add duplicate photo check before upload in src/js/services/photoService.js
-- [ ] T042 [US2] Implement photo upload to IndexedDB in src/js/storage.js
-- [ ] T043 [US2] Implement photo metadata save to SQLite in src/js/services/photoService.js
-- [ ] T044 [US2] Add thumbnail generation during upload in src/js/utils/thumbnail.js
-- [ ] T045 [US2] Create upload progress indicator UI in src/js/components/uploadProgress.js
-- [ ] T046 [US2] Implement simultaneous multi-photo upload queue in src/js/services/uploadService.js
-- [ ] T047 [P] [US2] Create photo delete UI (select and remove button) in src/js/components/photoTile.js
-- [ ] T048 [US2] Implement photo removal from IndexedDB in src/js/storage.js
-- [ ] T049 [US2] Implement photo metadata deletion from SQLite in src/js/services/photoService.js
-- [ ] T050 [US2] Wire up confirmation dialog (from T019a) for photo deletion in src/js/controllers/uploadController.js
-- [ ] T051 [US2] Show notification when duplicate photo detected in src/js/controllers/uploadController.js
-- [ ] T052 [P] [US2] Style file upload component in src/css/components/file-upload.css
-- [ ] T053 [P] [US2] Style upload progress indicator in src/css/components/upload-progress.css
-- [ ] T055 [US2] Enforce maximum limit of 500 photos per album in src/js/services/photoService.js
+- [X] T037 [P] [US2] Create file upload UI component in src/js/components/fileUpload.js
+- [X] T038 [P] [US2] Implement multi-file selection handler in src/js/components/fileUpload.js
+- [X] T039 [US2] Add file format validation (JPEG, PNG, HEIC, WebP) with HEIC browser compatibility check in src/js/utils/fileValidator.js
+- [X] T040 [US2] Implement file hash calculation for duplicate detection in src/js/services/photoService.js
+- [X] T041 [US2] Add duplicate photo check before upload in src/js/services/photoService.js
+- [X] T042 [US2] Implement photo upload to IndexedDB in src/js/storage.js
+- [X] T043 [US2] Implement photo metadata save to SQLite in src/js/services/photoService.js
+- [X] T044 [US2] Add thumbnail generation during upload in src/js/utils/thumbnail.js
+- [X] T045 [US2] Create upload progress indicator UI in src/js/components/uploadProgress.js
+- [X] T046 [US2] Implement simultaneous multi-photo upload queue in src/js/services/uploadService.js
+- [X] T047 [P] [US2] Create photo delete UI (select and remove button) in src/js/components/photoTile.js
+- [X] T048 [US2] Implement photo removal from IndexedDB in src/js/storage.js
+- [X] T049 [US2] Implement photo metadata deletion from SQLite in src/js/services/photoService.js
+- [X] T050 [US2] Wire up confirmation dialog (from T019a) for photo deletion in src/js/controllers/uploadController.js
+- [X] T051 [US2] Show notification when duplicate photo detected in src/js/controllers/uploadController.js
+- [X] T052 [P] [US2] Style file upload component in src/css/components/file-upload.css
+- [X] T053 [P] [US2] Style upload progress indicator in src/css/components/upload-progress.css
+- [X] T055 [US2] Enforce maximum limit of 500 photos per album in src/js/services/photoService.js
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently - users can create albums, upload photos with duplicate detection, and remove photos
 
@@ -131,21 +131,21 @@ Single-page web application structure:
 
 ### Implementation for User Story 3
 
-- [ ] T056 [P] [US3] Implement drag-and-drop event listeners in src/js/components/albumCard.js
-- [ ] T057 [P] [US3] Create drag handle visual indicator in src/js/components/albumCard.js
-- [ ] T058 [US3] Implement drag start handler with visual feedback in src/js/controllers/dragDropController.js
-- [ ] T059 [US3] Implement drag over handler with drop zone highlighting in src/js/controllers/dragDropController.js
-- [ ] T060 [US3] Implement drop handler with position calculation in src/js/controllers/dragDropController.js
-- [ ] T061 [US3] Implement drop validation (valid drop zones only) in src/js/controllers/dragDropController.js
-- [ ] T062 [US3] Add return-to-origin animation for invalid drops in src/js/controllers/dragDropController.js
-- [ ] T063 [US3] Create AlbumOrderService to manage custom order in src/js/services/albumOrderService.js
-- [ ] T064 [US3] Implement save custom album order to database in src/js/services/albumOrderService.js
-- [ ] T065 [US3] Update album sorting to respect custom order when set in src/js/services/albumService.js
-- [ ] T066 [US3] Ensure drag-drop save completes in under 1 second (async optimization) in src/js/services/albumOrderService.js
-- [ ] T067 [P] [US3] Style drag-and-drop visual feedback (cursor, opacity) in src/css/components/drag-drop.css
-- [ ] T068 [P] [US3] Style drop zone highlighting in src/css/components/drag-drop.css
-- [ ] T069 [P] [US3] Add touch device support for drag-and-drop in src/js/controllers/dragDropController.js
-- [ ] T070 [P] [US3] Add keyboard accessibility for album reordering in src/js/controllers/keyboardReorderController.js
+- [X] T056 [P] [US3] Implement drag-and-drop event listeners in src/js/components/albumCard.js
+- [X] T057 [P] [US3] Create drag handle visual indicator in src/js/components/albumCard.js
+- [X] T058 [US3] Implement drag start handler with visual feedback in src/js/controllers/dragDropController.js
+- [X] T059 [US3] Implement drag over handler with drop zone highlighting in src/js/controllers/dragDropController.js
+- [X] T060 [US3] Implement drop handler with position calculation in src/js/controllers/dragDropController.js
+- [X] T061 [US3] Implement drop validation (valid drop zones only) in src/js/controllers/dragDropController.js
+- [X] T062 [US3] Add return-to-origin animation for invalid drops in src/js/controllers/dragDropController.js
+- [X] T063 [US3] Create AlbumOrderService to manage custom order in src/js/services/albumOrderService.js
+- [X] T064 [US3] Implement save custom album order to database in src/js/services/albumOrderService.js
+- [X] T065 [US3] Update album sorting to respect custom order when set in src/js/services/albumService.js
+- [X] T066 [US3] Ensure drag-drop save completes in under 1 second (async optimization) in src/js/services/albumOrderService.js
+- [X] T067 [P] [US3] Style drag-and-drop visual feedback (cursor, opacity) in src/css/components/drag-drop.css
+- [X] T068 [P] [US3] Style drop zone highlighting in src/css/components/drag-drop.css
+- [X] T069 [P] [US3] Add touch device support for drag-and-drop in src/js/controllers/dragDropController.js
+- [X] T070 [P] [US3] Add keyboard accessibility for album reordering in src/js/controllers/keyboardReorderController.js
 
 **Checkpoint**: At this point, User Stories 1, 2, AND 3 should all work independently - users can create albums, upload photos, and reorder albums with persistence
 
@@ -159,23 +159,23 @@ Single-page web application structure:
 
 ### Implementation for User Story 4
 
-- [ ] T071 [P] [US4] Create album creation form UI in src/js/components/albumForm.js
-- [ ] T072 [P] [US4] Create album edit form UI (reuse albumForm with edit mode) in src/js/components/albumForm.js
-- [ ] T073 [US4] Implement form validation (name required, date required, no nesting support) in src/js/utils/formValidator.js
-- [ ] T074 [US4] Wire up album creation to AlbumService.create in src/js/controllers/albumController.js
-- [ ] T075 [US4] Wire up album edit to AlbumService.update in src/js/controllers/albumController.js
-- [ ] T076 [US4] Update main page to show newly created albums in correct date position in src/js/views/mainView.js
-- [ ] T077 [US4] Update main page when album date changes (re-sort) in src/js/views/mainView.js
-- [ ] T078 [P] [US4] Create album delete UI (delete button) in src/js/components/albumCard.js
-- [ ] T079 [US4] Wire up confirmation dialog (from T019a) for album deletion in src/js/controllers/albumController.js
-- [ ] T080 [US4] Implement cascade delete for all photos in album from IndexedDB in src/js/services/photoService.js
-- [ ] T081 [US4] Implement cascade delete for all photo metadata in SQLite in src/js/services/photoService.js
-- [ ] T082 [US4] Implement album deletion from SQLite in src/js/services/albumService.js
-- [ ] T083 [US4] Remove deleted album from main page UI in src/js/views/mainView.js
-- [ ] T084 [US4] Show success notification after album deletion in src/js/controllers/albumController.js
-- [ ] T085 [US4] Enforce maximum limit of 100 albums in src/js/services/albumService.js
-- [ ] T086 [P] [US4] Style album form in src/css/components/album-form.css
-- [ ] T087 [P] [US4] Style form validation errors in src/css/components/form-validation.css
+- [X] T071 [P] [US4] Create album creation form UI in src/js/components/albumForm.js
+- [X] T072 [P] [US4] Create album edit form UI (reuse albumForm with edit mode) in src/js/components/albumForm.js
+- [X] T073 [US4] Implement form validation (name required, date required, no nesting support) in src/js/utils/formValidator.js
+- [X] T074 [US4] Wire up album creation to AlbumService.create in src/js/controllers/albumController.js
+- [X] T075 [US4] Wire up album edit to AlbumService.update in src/js/controllers/albumController.js
+- [X] T076 [US4] Update main page to show newly created albums in correct date position in src/js/views/mainView.js
+- [X] T077 [US4] Update main page when album date changes (re-sort) in src/js/views/mainView.js
+- [X] T078 [P] [US4] Create album delete UI (delete button) in src/js/components/albumCard.js
+- [X] T079 [US4] Wire up confirmation dialog (from T019a) for album deletion in src/js/controllers/albumController.js
+- [X] T080 [US4] Implement cascade delete for all photos in album from IndexedDB in src/js/services/photoService.js
+- [X] T081 [US4] Implement cascade delete for all photo metadata in SQLite in src/js/services/photoService.js
+- [X] T082 [US4] Implement album deletion from SQLite in src/js/services/albumService.js
+- [X] T083 [US4] Remove deleted album from main page UI in src/js/views/mainView.js
+- [X] T084 [US4] Show success notification after album deletion in src/js/controllers/albumController.js
+- [X] T085 [US4] Enforce maximum limit of 100 albums in src/js/services/albumService.js
+- [X] T086 [P] [US4] Style album form in src/css/components/album-form.css
+- [X] T087 [P] [US4] Style form validation errors in src/css/components/form-validation.css
 
 **Checkpoint**: All user stories should now be independently functional - full CRUD on albums, photo upload/delete, drag-and-drop reordering
 

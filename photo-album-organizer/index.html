@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo Album Organizer - Organize your photos in albums by date">
+  <title>Photo Album Organizer</title>
+  <link rel="stylesheet" href="/src/css/variables.css">
+  <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <h1>Photo Album Organizer</h1>
+      <button id="create-album-btn" class="btn-primary" aria-label="Create new album">
+        + New Album
+      </button>
+    </header>
+    
+    <main class="app-main">
+      <div id="album-list-container" class="album-list">
+        <!-- Albums will be dynamically inserted here -->
+      </div>
+      
+      <div id="album-view-container" class="album-view" hidden>
+        <button id="back-to-albums-btn" class="btn-secondary" aria-label="Back to albums">
+          ← Back
+        </button>
+        <h2 id="album-title"></h2>
+        <button id="upload-photos-btn" class="btn-primary">
+          + Upload Photos
+        </button>
+        <div id="photo-grid-container" class="photo-grid">
+          <!-- Photos will be dynamically inserted here -->
+        </div>
+      </div>
+    </main>
+    
+    <div id="notification-container" class="notification-container" aria-live="polite"></div>
+  </div>
+  
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
